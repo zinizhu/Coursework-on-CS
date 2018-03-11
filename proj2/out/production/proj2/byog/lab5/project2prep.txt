@@ -1,0 +1,44 @@
+Q: Can you think of an analogy between the process of tesselating hexagons and randomly generating a world using rooms and hallways? 
+What is the hexagon and what is the tesselation on the project 2 side?
+
+A: We can consider hallways and rooms (I am not sure if walls and empty space are counted, maybe not) as single objects just as the
+single hexagon in the lab. And then assembling methods should be applied to choose the object and 'tesselate' them into a complete room.
+
+-----
+Q: If you were to start working on world generation, what kind of method would you think of writing first? 
+Think back to the lab and the process used to eventually get to tesselating hexagons.
+
+A: 1. Building single objects.
+   2. Deciding where to put objects.
+   3. Randomly selecting the kind of objects.
+   4. Check if the limitations are satisified.
+
+-----
+Q: What distinguishes a hallway from a room? How are they similar?
+
+A: A hallway has two exits and a room only has one. A hallway should look like a line with width of 1 unit. A room
+should be a rectangle or other shape.
+Similarity......They all have walls surrounding.
+
+-----
+Q: For tesselating hexagons, one of the hardest parts is figuring out where to place each hexagon/how to easily place hexagons on screen in an algorithmic way. 
+After looking at your own implemention, consider the implementation provided near the end of the lab. 
+How did your implementation differ from the given one? What lessons can be learned from it?
+
+A: Similar.
+
+-----
+Q: Consider an algorithm for placing rooms and hallways on your map. 
+Ideally, consider many algorithms and think about what makes some easier or harder to implement. Try and bring those ideas together into a single simple algorithm which accomplishes the task. 
+In general, algorithms with as few edge cases as possible are better algorithms.
+
+A: Emm......It's difficult to make sure that all objects are connected...
+   A possible way is to place the next object based on the position of the previous one.
+   But random position. Another problem is that the start position of an object should not
+   always be the left bottom corner or the room will keep building towards the right up corner.
+   Change the objects to: decide a start position and build an object of random size and arranged in a random way.
+
+Tomorrow!!
+Debug the size problem.
+what if the size of the object is beyond the world size?
+catch???
